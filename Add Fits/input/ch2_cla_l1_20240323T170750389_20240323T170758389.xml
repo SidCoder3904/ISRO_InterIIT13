@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><?xml-model href="https://isda.issdc.gov.in/pds4/isda/v1/ch2_ldd_ISDA_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?><Product_Observational xmlns:isda="https://isda.issdc.gov.in/pds4/isda/v1" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd https://isda.issdc.gov.in/pds4/isda/v1 https://isda.issdc.gov.in/pds4/isda/v1/ch2_ldd_ISDA_1000.xsd" xmlns="http://pds.nasa.gov/pds4/pds/v1">
+  <Identification_Area>
+    <logical_identifier>urn:isro:isda:ch2_cho:cla_calibrated:ch2_cla_l1_20240323t170750389_20240323t170758389</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>CHANDRAYAAN-2 Orbiter CLASS Experiment</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2024-06-28</modification_date>
+        <version_id>1.0</version_id>
+        <description>CLASS PDS4 product label created by URSC CLASS DP team.Initial version of data, includes all available detectors for observation duration.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2024-03-23T17:07:50.389Z</start_date_time>
+      <stop_date_time>2024-03-23T17:07:58.389Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Calibrated</processing_level>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>Chandrayaan-2</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lidvid_reference>urn:isro:isda:context:investigation:mission.chandrayaan2::1.0</lidvid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <name>Observing System</name>
+      <Observing_System_Component>
+        <name>Chandrayaan-2 Orbiter</name>
+        <type>Spacecraft</type>
+        <description>Chandrayaan-2 Orbiter is an Orbiter craft under the Chandrayaan-2 Spacecraft consisting of eight scientific instruments.</description>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>CLASS</name>
+        <type>Instrument</type>
+        <description>CLASS is an X ray fluorescence experiment to map the elemental abundances of the major rock forming elements on the lunar surface. The operating energy range 0.5 keV to 20 keV covers the XRF lines from Mg, Al, Si, Ca, Ti and Fe as well as Na, Cr etc which may be detected.  The spatial resolution is 12.5 km x 12.5 km from a 100 km orbit. In order to convert the XRF line flux to abundances, the incident solar spectrum is measured simultaneously with the X ray Solar Monitor (XSM) experiment on Chandrayaan-2 Orbiter.</description>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>Moon</name>
+      <type>Satellite</type>
+      <description>Moon is a natural satellite of Earth.</description>
+    </Target_Identification>
+    <Mission_Area>
+      <isda:Geometry_Parameters>
+        <isda:System_Level_Coordinates>
+          <isda:upper_left_latitude unit="deg">-40.4435</isda:upper_left_latitude>
+          <isda:upper_left_longitude unit="deg">105.434</isda:upper_left_longitude>
+          <isda:upper_right_latitude unit="deg">-40.4547</isda:upper_right_latitude>
+          <isda:upper_right_longitude unit="deg">106.509</isda:upper_right_longitude>
+          <isda:lower_left_latitude unit="deg">-41.6675</isda:lower_left_latitude>
+          <isda:lower_left_longitude unit="deg">105.406</isda:lower_left_longitude>
+          <isda:lower_right_latitude unit="deg">-41.679</isda:lower_right_latitude>
+          <isda:lower_right_longitude unit="deg">106.5</isda:lower_right_longitude>
+        </isda:System_Level_Coordinates>
+      </isda:Geometry_Parameters>
+    </Mission_Area>
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>ch2_cla_l1_20240323T170750389_20240323T170758389.fits</file_name>
+      <creation_date_time>2024-06-28T17:45:33</creation_date_time>
+      <file_size unit="byte">25920</file_size>
+      <records>2048</records>
+      <md5_checksum>9b549d20dc08000fe31aff4eb3dda048</md5_checksum>
+      <comment>This file contains the combined spectrum from all available detectors.</comment>
+    </File>
+    <Header>
+      <local_identifier>header_Primary</local_identifier>
+      <offset unit="byte">0</offset>
+      <object_length unit="byte">2880</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Header>
+      <local_identifier>header_Data</local_identifier>
+      <offset unit="byte">2880</offset>
+      <object_length unit="byte">5760</object_length>
+      <parsing_standard_id>FITS 3.0</parsing_standard_id>
+    </Header>
+    <Table_Binary>
+      <local_identifier>data</local_identifier>
+      <offset unit="byte">8640</offset>
+      <records>2048</records>
+      <description>The records count is the number of rows in this table</description>
+      <Record_Binary>
+        <fields>2</fields>
+        <groups>0</groups>
+        <record_length unit="byte">6</record_length>
+        <Field_Binary>
+          <name>CHANNEL</name>
+          <field_location unit="byte">1</field_location>
+          <data_type>SignedMSB2</data_type>
+          <field_length unit="byte">2</field_length>
+          <description>Channel number</description>
+        </Field_Binary>
+        <Field_Binary>
+          <name>COUNTS</name>
+          <field_location unit="byte">3</field_location>
+          <data_type>IEEE754MSBSingle</data_type>
+          <field_length unit="byte">4</field_length>
+          <unit>counts</unit>
+          <description>Counts in 8s</description>
+        </Field_Binary>
+      </Record_Binary>
+    </Table_Binary>
+  </File_Area_Observational>
+</Product_Observational>
